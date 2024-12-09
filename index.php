@@ -39,7 +39,7 @@ if (isset($_POST['register'])) {
             <div class="card w-70 mt-5">
                 <div class="card-body">
 
-                    <form action="/" method="post">
+                    <form action="#" method="post">
                         <label for="#name">Name</label>
                         <input class="form-control" type="text" name="name" id="#name" placeholder="Enter your name">
 
