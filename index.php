@@ -1,24 +1,3 @@
-<?php
-ini_set('display_errors', 1); // включает ошибки
-ini_set('display_startup_errors', 1); //
-error_reporting(E_ALL); // вывод всех ошибок
-
-# include - тип подключения когда фала если нет, код дальше выполняет работу (Warning)
-# include_once - не подключает файл больше одного раза
-
-# require - тип подключение файла без которого дальше код не выполняется (Fatal error)
-# require_once
-
-# __DIR__ . '/path'; - правильное прописывание абсолютного пути к папке относительно проекта
-
-if (isset($_POST['register'])) {
-    echo '<pre>';
-    var_dump($_POST);
-    die();
-}
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -40,7 +19,7 @@ if (isset($_POST['register'])) {
                 <div class="card w-70 mt-5">
                     <div class="card-body">
 
-                        <form action="#" method="post">
+                        <form action="script.php" method="post">
                             <label for="#name">Name</label>
                             <input class="form-control" type="text" name="name" id="#name"
                                 placeholder="Enter your name">
